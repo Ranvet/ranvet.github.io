@@ -4,13 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
-  <title>Research — Ranveer Tiwari</title>
-  <meta name="description" content="Ranveer Tiwari’s research interests in enterprise AI agents, authorization, observability, and operational control, with a published patent application and related technical writing.">
+  <title>Enterprise AI &amp; Agent Security — Ranveer Tiwari</title>
+  <meta name="description" content="Ranveer Tiwari’s research interests in enterprise AI and agent security: authorization, tool access, observability, and secure-by-design AI.">
   <link rel="canonical" href="https://ranvet.github.io/research/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ranveer Tiwari">
-  <meta property="og:title" content="Research — Ranveer Tiwari">
-  <meta property="og:description" content="Enterprise AI agents across applications: research interests, a published patent application, and related technical writing.">
+  <meta property="og:title" content="Enterprise AI &amp; Agent Security — Ranveer Tiwari">
+  <meta property="og:description" content="Research interests in AI agents, authorization, agent-to-tool security, enterprise AI security, observability, and secure-by-design AI.">
   <meta property="og:url" content="https://ranvet.github.io/research/">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
@@ -22,6 +22,7 @@
     <a class="brand" href="/" aria-label="Ranveer Tiwari home"><span class="monogram" aria-hidden="true">RT</span>Ranveer Tiwari</a>
     <nav aria-label="Main navigation">
       <a href="/research/" aria-current="page">Research</a>
+      <a href="/publications/">Publications</a>
       <a href="/writing/">Writing</a>
       <a href="/#about">About</a>
       <a href="/#connect">Connect</a>
@@ -30,46 +31,53 @@
 
   <main id="main">
     <section class="archive-hero wrap" aria-labelledby="research-title">
-      <p class="eyebrow">Enterprise AI · Architecture · Security</p>
-      <h1 id="research-title">Research<span class="name-dot">.</span></h1>
+      <p class="eyebrow">Research</p>
+      <h1 id="research-title">Enterprise AI &amp; <br>Agent Security<span class="name-dot">.</span></h1>
       <p class="research-question">How can enterprise AI agents act across applications while preserving authorization boundaries, observability, and operational control?</p>
       <p class="section-intro">This question guides my research interests in enterprise AI and connects them with my published work and practical architecture writing.</p>
       <div class="hero-actions">
-        <a class="button" href="#publications">View publications <span aria-hidden="true">↓</span></a>
+        <a class="button" href="/publications/">View publications <span aria-hidden="true">→</span></a>
         <a class="text-link" href="#research-profiles">Research profiles <span aria-hidden="true">→</span></a>
       </div>
     </section>
 
-    <section class="about-section wrap" aria-labelledby="research-theme-title">
-      <div>
-        <p class="eyebrow">Research interests</p>
-        <h2 id="research-theme-title">Autonomous AI Agents in Enterprise SaaS</h2>
+    <section class="research-section wrap" aria-labelledby="research-theme-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">Questions I’m exploring</p><h2 id="research-theme-title">Research interests</h2></div>
       </div>
-      <div class="about-copy">
-        <p class="about-lead">Coordinating useful work across applications while keeping identity, access, and execution understandable.</p>
-        <p>I’m interested in how domain-specific agents coordinate tasks across enterprise applications, and how permitted actions, data access, and user context remain explicit as work moves between systems.</p>
-        <p>This theme connects agent orchestration with authorization-aware tool use, traceable execution, and human oversight.</p>
+      <p class="section-intro">My interests connect autonomous agents with the security and operational requirements of enterprise systems.</p>
+      <div class="article-grid research-interest-grid">
+        <article class="article-card">
+          <h3>AI Agents</h3>
+          <p>How can specialized agents coordinate dependent tasks across enterprise applications?</p>
+        </article>
+        <article class="article-card">
+          <h3>Agent Authorization</h3>
+          <p>How can an agent preserve a user’s identity, access permissions, and delegated authority throughout a workflow?</p>
+        </article>
+        <article class="article-card">
+          <h3>Agent-to-Tool Security</h3>
+          <p>How should tool access, API calls, and execution permissions be scoped and checked before an agent acts?</p>
+        </article>
+        <article class="article-card">
+          <h3>Enterprise AI Security</h3>
+          <p>How can identity, data protection, and trust boundaries remain clear across models, integrations, and enterprise applications?</p>
+        </article>
+        <article class="article-card">
+          <h3>AI Observability</h3>
+          <p>What evidence helps explain an agent’s decisions, tool calls, and outcomes during operation and investigation?</p>
+        </article>
+        <article class="article-card">
+          <h3>Secure-by-Design AI</h3>
+          <p>How can security assumptions, approval points, and failure handling be considered early in an agent’s design?</p>
+        </article>
       </div>
     </section>
 
-    <section class="writing-section" id="publications" aria-labelledby="publications-title">
-      <div class="wrap">
-        <div class="section-heading">
-          <div><p class="eyebrow">Published outputs</p><h2 id="publications-title">Publications</h2></div>
-        </div>
-        <p class="section-intro">A published patent application related to autonomous agents and enterprise application workflows.</p>
-        <article class="article-card publication-card">
-          <div class="article-meta"><span>Published patent application</span><time datetime="2026-03-26">26 March 2026</time></div>
-          <h3><a href="https://patents.google.com/patent/US20260087266A1/en">Using Autonomous AI Agents to Perform Complicated Tasks in Fusion Cloud Applications</a></h3>
-          <p class="byline">Arun Kutty · Ranveer Tiwari · Liviu Matei</p>
-          <p>An approach to coordinating domain-specific AI agents across dependent enterprise tasks, from natural-language requests to application actions.</p>
-          <dl class="publication-details">
-            <div><dt>Publication</dt><dd>US20260087266A1</dd></div>
-            <div><dt>Application</dt><dd>18/898,383</dd></div>
-            <div><dt>Listed assignee</dt><dd>Oracle International Corp</dd></div>
-          </dl>
-          <a class="publication-label" href="https://patents.google.com/patent/US20260087266A1/en">Read the published application <span aria-hidden="true">↗</span></a>
-        </article>
+    <section class="wrap" id="publications" aria-labelledby="publications-title">
+      <div class="archive-callout">
+        <div><h2 id="publications-title">Publications</h2><p>Published work with inventor attribution, publication details, and original source records.</p></div>
+        <a class="button" href="/publications/">View publications <span aria-hidden="true">→</span></a>
       </div>
     </section>
 

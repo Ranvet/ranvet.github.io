@@ -4,19 +4,22 @@ Live address: https://ranvet.github.io/
 
 Research: https://ranvet.github.io/research/
 
-Writing archive: https://ranvet.github.io/writing/
+Publications: https://ranvet.github.io/publications/
 
-A small, portable personal site: static HTML and CSS, no third-party runtime dependencies, no trackers, no paid theme, and no external font requests. The homepage introduces Ranveer through his technical interests and thematic featured work, with employer affiliation providing context rather than defining the site's identity. Research and Writing have separate navigation destinations. The writing archive contains 28 verified articles with original summaries and full author credits, grouped by year, with optional local search and topic/year filters. All entries remain readable without JavaScript.
+Writing: https://ranvet.github.io/writing/
+
+A small, portable personal site: static HTML and CSS, no third-party runtime dependencies, no trackers, no paid theme, and no external font requests. The homepage introduces Ranveer through his technical interests and four thematic featured groups, with employer affiliation providing context rather than defining the site's identity. Research, Publications, and Writing have separate navigation destinations. The Writing page contains 28 verified technical articles with original summaries and full author credits, grouped by year, with optional local search and topic/year filters. All entries remain readable without JavaScript.
 
 ## Files
 
-- `index.html`: person-first introduction, thematic featured work, biography, and profile links.
-- `research/index.html`: research interests, a Publications subsection, and related technical writing.
+- `index.html`: person-first introduction, four thematic featured groups, biography, and profile links.
+- `research/index.html`: research interests and related technical writing.
+- `publications/index.html`: verified published outputs, with precise publication types and attribution.
 - `assets/style.css`: responsive layout and print styles.
-- `writing/index.html`: generated archive, committed so GitHub Pages can serve it directly.
+- `writing/index.html`: generated technical article collection, committed so GitHub Pages can serve it directly.
 - `data/articles.json`: verified article metadata and coverage notes.
-- `templates/writing.html`: archive page layout.
-- `scripts/build_writing.py`: dependency-free Python 3 archive generator.
+- `templates/writing.html`: technical article page layout.
+- `scripts/build_writing.py`: dependency-free Python 3 generator for the article collection.
 - `assets/writing.js`: search and filters; no network calls.
 - `assets/favicon.svg`: original text monogram.
 - `404.html`: missing-page fallback.
@@ -29,7 +32,7 @@ A small, portable personal site: static HTML and CSS, no third-party runtime dep
 2. Push these files to its `main` branch.
 3. In **Settings → Pages**, select **Deploy from a branch**, **main**, **/(root)**, then save.
 4. Wait for the Pages deployment to complete and open https://ranvet.github.io/.
-5. Confirm HTTPS and test Research, Writing, profile links, and the About/Connect homepage anchors.
+5. Confirm HTTPS and test Research, Publications, Writing, profile links, and the About/Connect homepage anchors.
 
 This uses GitHub Pages for a public repository; no domain purchase is needed. GitHub documents eligibility and setup at https://docs.github.com/en/pages/quickstart.
 
@@ -47,7 +50,7 @@ Visit http://127.0.0.1:4000/. Use an HTTP server instead of opening the HTML as 
 
 Edit `index.html` directly in GitHub using the pencil button, then commit the change to `main`. GitHub Pages republishes it automatically.
 
-For another archive entry, add its exact title, original URL, article-displayed ISO date, all byline authors, publisher, primary topic, and short original summary to `data/articles.json`. Update verification and coverage notes as appropriate. Run `python3 scripts/build_writing.py`, then commit both the metadata and generated `writing/index.html`. The thematic featured work is maintained separately in `index.html`; update its article-count callout when the archive grows. Keep Research before Writing in navigation, preserve the active-page marker, and use `/#about` and `/#connect` from supporting pages. Do not hand-edit the generated archive.
+For another technical article entry, add its exact title, original URL, article-displayed ISO date, all byline authors, publisher, primary topic, and short original summary to `data/articles.json`. Update verification and coverage notes as appropriate. Run `python3 scripts/build_writing.py`, then commit both the metadata and generated `writing/index.html`. The four thematic featured groups are maintained separately in `index.html`; update its article-count callout when the collection grows. Navigation order is Research, Publications, Writing, About, Connect. Preserve the active-page marker and use `/#about` and `/#connect` from supporting pages. Do not hand-edit the generated article collection.
 
 Coverage checked on 2026-09-13: all 27 distinct URLs from the earlier public author-profile inventory were verified against public source articles; one additional coauthored July 2026 article was found in A-Team’s Architecture category. Current author-profile pagination could not be completed because its dynamic list was inaccessible. Thus 28 is the verified inventory count, not a guarantee of every current post. External Oracle Cloud Infrastructure Blog entries linked by the author profile are included. Each JSON record retains relevant date corrections or source-verification limitations.
 
@@ -55,9 +58,9 @@ This site is a **portfolio**, not a full blogging CMS. It has no built-in rich-t
 
 ## Research and publications
 
-The standalone `/research/` page separates stated research interests from published outputs. Its Publications subsection currently contains one **published patent application**, with the publication identifier, publication date, inventor credits, and a source link. This is not presented as a granted patent, journal article, or conference paper. Related technical articles link to their original Oracle publications and the full Writing archive.
+The standalone `/research/` page presents stated research interests and related technical writing. The separate `/publications/` page presents verified published outputs. It currently contains one **published patent application**, with the publication identifier, publication date, inventor credits, and a source link. This is not presented as a granted patent, journal article, or conference paper. Technical articles remain available through the Writing page and link to their original Oracle publications.
 
-The public Google Scholar and ORCID profiles were checked on 2026-09-13 and each listed the same patent application, not two distinct outputs. Their presence does not establish a list of peer-reviewed papers. Keep research interests distinct from claims about published results, and verify each new output's type, title, identifier, date, and attribution before adding it. Edit `research/index.html` directly; preserve its canonical URL and keep new local page routes in `sitemap.xml` without inventing update dates.
+The public Google Scholar and ORCID profiles were checked on 2026-09-13 and each listed the same patent application, not two distinct outputs. Their presence does not establish a list of peer-reviewed papers. Keep research interests distinct from claims about published results, and verify each new output's type, title, identifier, date, and attribution before adding it. Edit `research/index.html` and `publications/index.html` directly; preserve their separate canonical URLs and keep new local page routes in `sitemap.xml` without inventing update dates.
 
 ## Content boundaries
 
