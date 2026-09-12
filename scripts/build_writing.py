@@ -70,6 +70,7 @@ def build():
         checked=date_label(DATA["verified_on"]),
     )
     (ROOT / "writing").mkdir(exist_ok=True)
+    output = "\n".join(line.rstrip() for line in output.splitlines()) + "\n"
     (ROOT / "writing/index.html").write_text(output)
     print(f"Built {len(ordered)} articles across {len(years)} years and {len(topics)} topics.")
 
