@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ranvet.github.io/sitemap.xml
