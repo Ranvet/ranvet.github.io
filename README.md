@@ -2,13 +2,16 @@
 
 Live address: https://ranvet.github.io/
 
+Research: https://ranvet.github.io/research/
+
 Writing archive: https://ranvet.github.io/writing/
 
-A small, portable personal site: static HTML and CSS, no third-party runtime dependencies, no trackers, no paid theme, and no external font requests. The homepage presents six selected articles. The writing archive contains 28 verified articles with original summaries and full author credits, grouped by year, with optional local search and topic/year filters. All entries remain readable without JavaScript.
+A small, portable personal site: static HTML and CSS, no third-party runtime dependencies, no trackers, no paid theme, and no external font requests. The homepage introduces Ranveer through his technical interests and thematic featured work, with employer affiliation providing context rather than defining the site's identity. Research and Writing have separate navigation destinations. The writing archive contains 28 verified articles with original summaries and full author credits, grouped by year, with optional local search and topic/year filters. All entries remain readable without JavaScript.
 
 ## Files
 
-- `index.html`: homepage, biography, article entries, and profile links.
+- `index.html`: person-first introduction, thematic featured work, biography, and profile links.
+- `research/index.html`: research interests, a Publications subsection, and related technical writing.
 - `assets/style.css`: responsive layout and print styles.
 - `writing/index.html`: generated archive, committed so GitHub Pages can serve it directly.
 - `data/articles.json`: verified article metadata and coverage notes.
@@ -26,7 +29,7 @@ A small, portable personal site: static HTML and CSS, no third-party runtime dep
 2. Push these files to its `main` branch.
 3. In **Settings → Pages**, select **Deploy from a branch**, **main**, **/(root)**, then save.
 4. Wait for the Pages deployment to complete and open https://ranvet.github.io/.
-5. Confirm HTTPS and test the writing/profile links.
+5. Confirm HTTPS and test Research, Writing, profile links, and the About/Connect homepage anchors.
 
 This uses GitHub Pages for a public repository; no domain purchase is needed. GitHub documents eligibility and setup at https://docs.github.com/en/pages/quickstart.
 
@@ -44,18 +47,24 @@ Visit http://127.0.0.1:4000/. Use an HTTP server instead of opening the HTML as 
 
 Edit `index.html` directly in GitHub using the pencil button, then commit the change to `main`. GitHub Pages republishes it automatically.
 
-For another archive entry, add its exact title, original URL, article-displayed ISO date, all byline authors, publisher, primary topic, and short original summary to `data/articles.json`. Update verification and coverage notes as appropriate. Run `python3 scripts/build_writing.py`, then commit both the metadata and generated `writing/index.html`. The homepage selection is maintained separately in `index.html`; update its article-count callout when the archive grows. Do not hand-edit the generated archive.
+For another archive entry, add its exact title, original URL, article-displayed ISO date, all byline authors, publisher, primary topic, and short original summary to `data/articles.json`. Update verification and coverage notes as appropriate. Run `python3 scripts/build_writing.py`, then commit both the metadata and generated `writing/index.html`. The thematic featured work is maintained separately in `index.html`; update its article-count callout when the archive grows. Keep Research before Writing in navigation, preserve the active-page marker, and use `/#about` and `/#connect` from supporting pages. Do not hand-edit the generated archive.
 
 Coverage checked on 2026-09-13: all 27 distinct URLs from the earlier public author-profile inventory were verified against public source articles; one additional coauthored July 2026 article was found in A-Team’s Architecture category. Current author-profile pagination could not be completed because its dynamic list was inaccessible. Thus 28 is the verified inventory count, not a guarantee of every current post. External Oracle Cloud Infrastructure Blog entries linked by the author profile are included. Each JSON record retains relevant date corrections or source-verification limitations.
 
-This first version is a **portfolio**, not a full blogging CMS. It has no built-in rich-text editor, subscriber list, comments, or newsletter. HTML supports headings, tables, images, links, and code blocks. When adding original long-form posts, a Markdown generator such as Jekyll can be introduced without changing the public address; remove `.nojekyll` if moving to GitHub’s branch-based Jekyll build. Avoid publishing empty placeholder articles.
+This site is a **portfolio**, not a full blogging CMS. It has no built-in rich-text editor, subscriber list, comments, or newsletter. HTML supports headings, tables, images, links, and code blocks. When adding original long-form posts, a Markdown generator such as Jekyll can be introduced without changing the public address; remove `.nojekyll` if moving to GitHub’s branch-based Jekyll build. Avoid publishing empty placeholder articles.
+
+## Research and publications
+
+The standalone `/research/` page separates stated research interests from published outputs. Its Publications subsection currently contains one **published patent application**, with the publication identifier, publication date, inventor credits, and a source link. This is not presented as a granted patent, journal article, or conference paper. Related technical articles link to their original Oracle publications and the full Writing archive.
+
+The public Google Scholar and ORCID profiles were checked on 2026-09-13 and each listed the same patent application, not two distinct outputs. Their presence does not establish a list of peer-reviewed papers. Keep research interests distinct from claims about published results, and verify each new output's type, title, identifier, date, and attribution before adding it. Edit `research/index.html` directly; preserve its canonical URL and keep new local page routes in `sitemap.xml` without inventing update dates.
 
 ## Content boundaries
 
-- All entries link to the original public articles; full articles and Oracle images are not copied.
+- Technical article entries link to the original public articles; full articles and Oracle images are not copied into this site. Local preservation backups remain separate and are not deployed here.
 - Keep original bylines, product-support limitations, source links, and dates. Dates here are the source’s displayed publication dates, not a claim about its most recent revision.
 - Confirm applicable publication/reuse permission before republishing employer-owned or jointly authored material.
-- LinkedIn, Google Scholar, and ORCID addresses were supplied by the site owner; no citation counts, credentials, or research-publication claims are inferred.
+- LinkedIn, Google Scholar, and ORCID addresses were supplied by the site owner. Public profile records support the identified patent-application entry; no citation counts, academic credentials, peer-reviewed papers, or patent-grant status are inferred.
 - Do not commit credentials, customer data, unpublished patent material, or internal work documents.
 - No open-source license is selected on the owner’s behalf.
 

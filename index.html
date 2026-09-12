@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light">
   <title>Ranveer Tiwari — Enterprise Architecture, Security &amp; Applied AI</title>
-  <meta name="description" content="Ranveer Tiwari’s personal home for technical writing on enterprise architecture, Oracle Fusion security, observability, integration, and applied AI.">
+  <meta name="description" content="Ranveer Tiwari’s research interests, publications, and technical writing on enterprise architecture, security, identity, observability, integration, and applied AI.">
   <link rel="canonical" href="https://ranvet.github.io/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ranveer Tiwari">
   <meta property="og:title" content="Ranveer Tiwari — Enterprise Architecture, Security &amp; Applied AI">
-  <meta property="og:description" content="Technical writing and reference architectures for secure, observable enterprise systems.">
+  <meta property="og:description" content="Research interests, published work, and reference architectures for secure, observable enterprise systems.">
   <meta property="og:url" content="https://ranvet.github.io/">
   <meta name="twitter:card" content="summary">
   <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
@@ -36,6 +36,7 @@
   <header class="site-header wrap">
     <a class="brand" href="/" aria-label="Ranveer Tiwari home"><span class="monogram" aria-hidden="true">RT</span>Ranveer Tiwari</a>
     <nav aria-label="Main navigation">
+      <a href="/research/">Research</a>
       <a href="/writing/">Writing</a>
       <a href="#about">About</a>
       <a href="#connect">Connect</a>
@@ -45,13 +46,13 @@
   <main id="main">
     <section class="hero wrap" aria-labelledby="intro-title">
       <div class="hero-copy">
-        <p class="eyebrow">Architecture · Security · Applied AI</p>
+        <p class="eyebrow">Enterprise Architecture · Security · Applied AI</p>
         <h1 id="intro-title">Ranveer Tiwari<span class="name-dot">.</span></h1>
         <p class="hero-deck">Making enterprise systems<br class="desktop-break"> secure, observable, and connected.</p>
-        <p class="hero-description">I’m a Cloud Solution Architect with Oracle’s A-Team. My technical writing explores identity, application security, observability, integration, and applied AI in enterprise systems.</p>
+        <p class="hero-description">I’m an enterprise architect working across security, identity, observability, integration, and applied AI. At Oracle’s A-Team, I focus on the architecture of secure, connected enterprise applications.</p>
         <div class="hero-actions">
-          <a class="button" href="/writing/">Explore my writing <span aria-hidden="true">↗</span></a>
-          <a class="text-link" href="#connect">Find me elsewhere <span aria-hidden="true">→</span></a>
+          <a class="button" href="/research/">Explore my research <span aria-hidden="true">→</span></a>
+          <a class="text-link" href="/writing/">Read my writing <span aria-hidden="true">→</span></a>
         </div>
       </div>
       <aside class="focus-note" aria-label="Areas of focus">
@@ -60,7 +61,7 @@
           <li><span aria-hidden="true">01</span>Security &amp; identity</li>
           <li><span aria-hidden="true">02</span>Audit &amp; observability</li>
           <li><span aria-hidden="true">03</span>Integration &amp; extensibility</li>
-          <li><span aria-hidden="true">04</span>Applied AI</li>
+          <li><span aria-hidden="true">04</span>Applied AI &amp; agents</li>
         </ol>
         <p>Technical perspectives grounded in enterprise architecture.</p>
       </aside>
@@ -69,54 +70,66 @@
     <section class="writing-section" id="writing" aria-labelledby="writing-title">
       <div class="wrap">
         <div class="section-heading">
-          <div><p class="eyebrow">Selected work</p><h2 id="writing-title">Technical writing</h2></div>
-          <a class="text-link" href="https://www.ateam-oracle.com/authors/ranveer-tiwari/">A-Team author profile <span aria-hidden="true">↗</span></a>
+          <div><p class="eyebrow">Ideas in practice</p><h2 id="writing-title">Featured work</h2></div>
+          <a class="text-link" href="/writing/">All technical writing <span aria-hidden="true">→</span></a>
         </div>
-        <p class="section-intro">A selection of articles I’ve authored and coauthored for Oracle A-Team. Each link opens the original publication, with its full context and attribution.</p>
-        <div class="article-grid">
-          <article class="article-card">
-            <div class="article-meta"><span>Security &amp; IAM</span><time datetime="2026-06-24">24 Jun 2026</time></div>
-            <h3><a href="https://www.ateam-oracle.com/securing-oracle-fusion-cloud-supplier-portal-with-iam-domains-and-mfa">Securing Oracle Fusion Cloud Supplier Portal with IAM Domains and MFA</a></h3>
-            <p>Explains supplier sign-in and multifactor authentication after the Fusion Identity Upgrade, including user categories and separation from employee identity providers.</p>
-            <p class="byline">Roland Koenn · Ranveer Tiwari · SaaS Cloud Security</p>
-            <span class="publication-label">Oracle A-Team <span aria-hidden="true">↗</span></span>
+        <p class="section-intro">Selected articles and reference implementations, organized around the problems I work on. These authored and coauthored articles currently open at their original publishers, with full context and attribution.</p>
+        <section class="featured-group" aria-labelledby="featured-ai">
+          <h3 class="featured-group-title" id="featured-ai">Enterprise AI security</h3>
+          <article class="article-card collection-card">
+            <div class="article-meta"><span>Three-part collection</span><time datetime="2026-07-29">29 Jul 2026</time></div>
+            <h4>Fusion AI agents: security from design to operations</h4>
+            <p>A connected set of architectural considerations for agent design, runtime enforcement, and operational oversight.</p>
+            <ol class="series-links security-series">
+              <li><a href="https://blogs.oracle.com/cloud-infrastructure/fusion-ai-agents-secure-by-design">Secure by Design</a><span>Identity context, instruction boundaries, and business risk.</span></li>
+              <li><a href="https://blogs.oracle.com/cloud-infrastructure/fusion-ai-agents-secure-by-enforcement">Secure by Enforcement</a><span>Least privilege, constrained tool use, and approval boundaries.</span></li>
+              <li><a href="https://blogs.oracle.com/cloud-infrastructure/fusion-ai-agents-secure-by-operations">Secure by Operations</a><span>Observability, testing, change governance, and containment.</span></li>
+            </ol>
+            <p class="byline">Reshma Sivakumar · Ranveer Tiwari · Miranda Jimenez · SaaS Cloud Security</p>
+            <span class="publication-label">Oracle Cloud Infrastructure Blog <span aria-hidden="true">↗</span></span>
           </article>
-          <article class="article-card">
-            <div class="article-meta"><span>Audit &amp; Observability</span><time datetime="2026-06-02">2 Jun 2026</time></div>
-            <h3><a href="https://www.ateam-oracle.com/part-1-streaming-oracle-fusion-cloud-audit-events-to-oci-streaming-using-oracle-integration">Part 1 – Streaming Oracle Fusion Cloud Audit Events to OCI Streaming using Oracle Integration</a></h3>
-            <p>Presents a reference integration for extracting Fusion audit events and publishing them to OCI Streaming, with incremental extraction and operational considerations.</p>
-            <p class="byline">Rekha Mathew · Ranveer Tiwari · Roland Koenn</p>
-            <span class="publication-label">Oracle A-Team <span aria-hidden="true">↗</span></span>
-          </article>
-          <article class="article-card">
-            <div class="article-meta"><span>AI &amp; Least Privilege</span><time datetime="2026-02-08">8 Feb 2026</time></div>
-            <h3><a href="https://www.ateam-oracle.com/conversational-security-in-oracle-fusion-an-ai-agent-for-least-privilege-discovery">Conversational Security in Oracle Fusion: An AI Agent for Least-Privilege Discovery</a></h3>
-            <p>Explores a conversational security agent design that maps Fusion access questions to privileges, roles, and authorization paths across application resources.</p>
-            <p class="byline">Ranveer Tiwari · Roland Koenn</p>
-            <span class="publication-label">Oracle A-Team <span aria-hidden="true">↗</span></span>
-          </article>
-          <article class="article-card">
-            <div class="article-meta"><span>AI &amp; Observability</span><time datetime="2025-11-14">14 Nov 2025</time></div>
-            <h3><a href="https://www.ateam-oracle.com/aidriven-iam-audit-analysis-for-oracle-saas-from-raw-logs-to-actionable-security-insights-with-oci-log-analytics">AI-Driven IAM Audit Analysis for Oracle SaaS: From Raw Logs to Actionable Security Insights with OCI Log Analytics</a></h3>
-            <p>Describes an identity audit analytics workflow using OCI Log Analytics and LoganAI, with example detection queries, dashboards, and alert configurations.</p>
-            <p class="byline">Roland Koenn · Ranveer Tiwari</p>
-            <span class="publication-label">Oracle A-Team <span aria-hidden="true">↗</span></span>
-          </article>
-          <article class="article-card">
-            <div class="article-meta"><span>Audit &amp; Observability</span><time datetime="2024-08-02">2 Aug 2024</time></div>
-            <h3><a href="https://www.ateam-oracle.com/methods-to-extract-audit-monitoring-data-from-fusion-applications">Methods to extract audit &amp; monitoring data from Fusion cloud applications for SIEM Integrations</a></h3>
-            <p>Surveys Fusion audit and monitoring sources, extraction options, and retention considerations to help teams plan integrations with security analytics platforms.</p>
-            <p class="byline">Ranveer Tiwari</p>
-            <span class="publication-label">Oracle A-Team <span aria-hidden="true">↗</span></span>
-          </article>
-          <article class="article-card">
-            <div class="article-meta"><span>Integration &amp; Extensibility</span><time datetime="2024-05-21">21 May 2024</time></div>
-            <h3><a href="https://www.ateam-oracle.com/using-vbcs-service-connections-provisioned-in-fusion-iam-identity-domain">Part 1 – Extending Fusion Applications using VBCS: OAuth Configurations</a></h3>
-            <p>Explains OAuth configuration choices for Visual Builder extensions in the Fusion Applications identity domain, including service connections and identity integration.</p>
-            <p class="byline">Ranveer Tiwari</p>
-            <span class="publication-label">Oracle A-Team <span aria-hidden="true">↗</span></span>
-          </article>
-        </div>
+        </section>
+        <section class="featured-group" aria-labelledby="featured-identity">
+          <h3 class="featured-group-title" id="featured-identity">Security &amp; identity</h3>
+          <div class="article-grid">
+            <article class="article-card">
+              <div class="article-meta"><span>AI &amp; Least Privilege</span><time datetime="2026-02-08">8 Feb 2026</time></div>
+              <h4><a href="https://www.ateam-oracle.com/conversational-security-in-oracle-fusion-an-ai-agent-for-least-privilege-discovery">Conversational Security in Oracle Fusion: An AI Agent for Least-Privilege Discovery</a></h4>
+              <p>A reference implementation that translates natural-language security questions into read-only Fusion privilege and role analysis through controlled integrations.</p>
+              <p class="byline">Ranveer Tiwari · Roland Koenn</p>
+              <span class="publication-label">Oracle A-Team <span aria-hidden="true">↗</span></span>
+            </article>
+            <article class="article-card">
+              <div class="article-meta"><span>Security Audits</span><time datetime="2026-02-15">15 Feb 2026</time></div>
+              <h4><a href="https://www.ateam-oracle.com/who-did-what-and-with-which-access-demystifying-oracle-fusion-security-audits">Who did what and with which access? Demystifying Oracle Fusion Security Audits</a></h4>
+              <p>Clarifies how access assignments, security changes, and transaction audits relate, including the limits of attributing actions to roles.</p>
+              <p class="byline">Ranveer Tiwari</p>
+              <span class="publication-label">Oracle A-Team <span aria-hidden="true">↗</span></span>
+            </article>
+          </div>
+        </section>
+        <section class="featured-group" aria-labelledby="featured-observability">
+          <h3 class="featured-group-title" id="featured-observability">Observability &amp; operational control</h3>
+          <div class="article-grid">
+            <article class="article-card">
+              <div class="article-meta"><span>Operational Intelligence</span><time datetime="2026-01-22">22 Jan 2026</time></div>
+              <h4><a href="https://www.ateam-oracle.com/beyond-monitoring-ai-driven-fusion-ess-job-health-risk-observatory-operational-intelligence-for-ess-jobs-with-oci-log-analytics">Beyond Monitoring: AI-Driven Fusion ESS Job Health &amp; Risk Observatory</a></h4>
+              <p>A reference observatory combining ESS runtime metrics, historical trends, dashboards, and detection rules in OCI Log Analytics to support operational decisions.</p>
+              <p class="byline">Ranveer Tiwari</p>
+              <span class="publication-label">Oracle A-Team <span aria-hidden="true">↗</span></span>
+            </article>
+            <article class="article-card collection-card">
+              <div class="article-meta"><span>Two-part collection</span><time datetime="2026-06-02">2 Jun 2026</time></div>
+              <h4>Fusion audit → OCI Streaming → SIEM</h4>
+              <p>Reference integration patterns connecting Fusion audit records to independent security analytics consumers.</p>
+              <ol class="series-links">
+                <li><a href="https://www.ateam-oracle.com/part-1-streaming-oracle-fusion-cloud-audit-events-to-oci-streaming-using-oracle-integration">Part 1: Fusion audit events to OCI Streaming</a><span class="series-byline">Rekha Mathew · Ranveer Tiwari · Roland Koenn</span></li>
+                <li><a href="https://www.ateam-oracle.com/part-2-integrating-oci-streaming-with-siem-platforms-splunk-using-oci-functions-and-kafka-connect">Part 2: OCI Streaming to Splunk</a><span class="series-byline">Ranveer Tiwari · Roland Koenn</span></li>
+              </ol>
+              <span class="publication-label">Oracle A-Team <span aria-hidden="true">↗</span></span>
+            </article>
+          </div>
+        </section>
         <div class="archive-callout"><div><h3>Explore the writing archive</h3><p>28 articles across Oracle A-Team and other Oracle publications, organized by year and topic.</p></div><a class="button" href="/writing/">View all articles <span aria-hidden="true">→</span></a></div>
         <p class="source-note">Dates reflect the original pages’ displayed publication dates. Reference implementations are not statements of product availability or support.</p>
       </div>
@@ -125,9 +138,12 @@
     <section class="about-section wrap" id="about" aria-labelledby="about-title">
       <div><p class="eyebrow">The person behind the work</p><h2 id="about-title">About me</h2></div>
       <div class="about-copy">
-        <p class="about-lead">My focus is the architecture behind secure, connected enterprise applications.</p>
-        <p>At Oracle’s A-Team, I write about Oracle Fusion and cloud architecture: how identity and access fit together, how audit data becomes useful, and how integrations and extensions work across systems.</p>
-        <p>This is my personal home for that body of work and my broader technical interests. My professional, research, and code profiles are linked below.</p>
+        <p class="about-lead">I work at the intersection of enterprise SaaS, cloud architecture, security, and applied AI.</p>
+        <h3>What I work on</h3>
+        <p>Identity and authorization, audit and observability, cross-system integration, and applied AI agents. My work at Oracle’s A-Team brings these interests into the architecture of Oracle Fusion and cloud applications.</p>
+        <h3>The question behind the work</h3>
+        <p class="research-question">How can enterprise AI agents act across applications while preserving authorization boundaries, observability, and operational control?</p>
+        <p>This site brings together my research interests, published work, and technical writing. <a href="/research/">Explore the research direction</a> or <a href="/research/#publications">view publications</a>.</p>
       </div>
     </section>
 
