@@ -1,13 +1,20 @@
 # Ranveer Tiwari — personal website
 
-Target address: https://ranvet.github.io/
+Live address: https://ranvet.github.io/
 
-A small, portable personal site: plain HTML and CSS, no build dependencies, no trackers, no paid theme, and no external font requests. It contains an introduction, six selected A-Team articles with original short descriptions and full author credits, an about section, and professional/research profile links.
+Writing archive: https://ranvet.github.io/writing/
+
+A small, portable personal site: static HTML and CSS, no third-party runtime dependencies, no trackers, no paid theme, and no external font requests. The homepage presents six selected articles. The writing archive contains 28 verified articles with original summaries and full author credits, grouped by year, with optional local search and topic/year filters. All entries remain readable without JavaScript.
 
 ## Files
 
 - `index.html`: homepage, biography, article entries, and profile links.
 - `assets/style.css`: responsive layout and print styles.
+- `writing/index.html`: generated archive, committed so GitHub Pages can serve it directly.
+- `data/articles.json`: verified article metadata and coverage notes.
+- `templates/writing.html`: archive page layout.
+- `scripts/build_writing.py`: dependency-free Python 3 archive generator.
+- `assets/writing.js`: search and filters; no network calls.
 - `assets/favicon.svg`: original text monogram.
 - `404.html`: missing-page fallback.
 - `robots.txt` and `sitemap.xml`: crawler discovery.
@@ -37,13 +44,15 @@ Visit http://127.0.0.1:4000/. Use an HTTP server instead of opening the HTML as 
 
 Edit `index.html` directly in GitHub using the pencil button, then commit the change to `main`. GitHub Pages republishes it automatically.
 
-For another external article, duplicate an `<article class="article-card">` block. Replace the exact title, source URL, displayed date, topic, short original description, and all byline authors. Place newest entries first. This is a curated selection, not a complete publication inventory.
+For another archive entry, add its exact title, original URL, article-displayed ISO date, all byline authors, publisher, primary topic, and short original summary to `data/articles.json`. Update verification and coverage notes as appropriate. Run `python3 scripts/build_writing.py`, then commit both the metadata and generated `writing/index.html`. The homepage selection is maintained separately in `index.html`; update its article-count callout when the archive grows. Do not hand-edit the generated archive.
+
+Coverage checked on 2026-09-13: all 27 distinct URLs from the earlier public author-profile inventory were verified against public source articles; one additional coauthored July 2026 article was found in A-Team’s Architecture category. Current author-profile pagination could not be completed because its dynamic list was inaccessible. Thus 28 is the verified inventory count, not a guarantee of every current post. External Oracle Cloud Infrastructure Blog entries linked by the author profile are included. Each JSON record retains relevant date corrections or source-verification limitations.
 
 This first version is a **portfolio**, not a full blogging CMS. It has no built-in rich-text editor, subscriber list, comments, or newsletter. HTML supports headings, tables, images, links, and code blocks. When adding original long-form posts, a Markdown generator such as Jekyll can be introduced without changing the public address; remove `.nojekyll` if moving to GitHub’s branch-based Jekyll build. Avoid publishing empty placeholder articles.
 
 ## Content boundaries
 
-- The six A-Team entries link to the original public articles; full articles and Oracle images are not copied.
+- All entries link to the original public articles; full articles and Oracle images are not copied.
 - Keep original bylines, product-support limitations, source links, and dates. Dates here are the source’s displayed publication dates, not a claim about its most recent revision.
 - Confirm applicable publication/reuse permission before republishing employer-owned or jointly authored material.
 - LinkedIn, Google Scholar, and ORCID addresses were supplied by the site owner; no citation counts, credentials, or research-publication claims are inferred.

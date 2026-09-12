@@ -1,0 +1,373 @@
+{
+  "verified_on": "2026-09-13",
+  "source_profile": "https://www.ateam-oracle.com/authors/ranveer-tiwari/",
+  "coverage_note": "This archive contains 28 verified articles found through the author-profile inventory and public Oracle pages. The live author list could not be fully paginated during this check; additional posts may exist.",
+  "articles": [
+    {
+      "title": "Fusion AI Agents: Secure by Design Best-Practice Considerations",
+      "url": "https://blogs.oracle.com/cloud-infrastructure/fusion-ai-agents-secure-by-design",
+      "date": "2026-07-29",
+      "authors": [
+        "Reshma Sivakumar",
+        "Ranveer Tiwari",
+        "Miranda Jimenez",
+        "SaaS Cloud Security"
+      ],
+      "publisher": "Oracle Cloud Infrastructure Blog",
+      "topic": "Applied AI",
+      "summary": "Outlines architectural considerations for Fusion agents, connecting business risk, identity context, instruction boundaries, segregation of duties, and available security controls.",
+      "verification_note": "The current article displays July 29, 2026; the saved author-feed inventory listed June 16, 2026."
+    },
+    {
+      "title": "Fusion AI Agents: Secure by Enforcement Best-Practice Considerations",
+      "url": "https://blogs.oracle.com/cloud-infrastructure/fusion-ai-agents-secure-by-enforcement",
+      "date": "2026-07-29",
+      "authors": [
+        "Reshma Sivakumar",
+        "Ranveer Tiwari",
+        "Miranda Jimenez",
+        "SaaS Cloud Security"
+      ],
+      "publisher": "Oracle Cloud Infrastructure Blog",
+      "topic": "Applied AI",
+      "summary": "Examines runtime security patterns for Fusion agents, covering least privilege, constrained tool use, approval boundaries, and controls beyond model behavior.",
+      "verification_note": "The current article displays July 29, 2026; the saved author-feed inventory listed June 16, 2026."
+    },
+    {
+      "title": "Fusion AI Agents: Secure by Operations Best-Practice Considerations",
+      "url": "https://blogs.oracle.com/cloud-infrastructure/fusion-ai-agents-secure-by-operations",
+      "date": "2026-07-29",
+      "authors": [
+        "Reshma Sivakumar",
+        "Ranveer Tiwari",
+        "Miranda Jimenez",
+        "SaaS Cloud Security"
+      ],
+      "publisher": "Oracle Cloud Infrastructure Blog",
+      "topic": "Applied AI",
+      "summary": "Discusses operational architecture considerations for Fusion agents, including observability, sensitive data handling, adversarial testing, change governance, and containment controls.",
+      "verification_note": "The current article displays July 29, 2026; the saved author-feed inventory listed June 16, 2026."
+    },
+    {
+      "title": "Fusion Enterprise Scheduler Job Performance Analysis and Risk Management with BI Publisher SOAP Log Analytics",
+      "url": "https://www.ateam-oracle.com/fusion-enterprise-scheduler-job-performance-analysis-and-risk-management-with-bi-publisher-soap-log-analytics",
+      "date": "2026-07-22",
+      "authors": [
+        "Royce Fu",
+        "Zubair Ansari",
+        "Sindhuja Banka",
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Audit & Observability",
+      "summary": "Describes collecting custom BI Publisher data for Fusion ESS performance and risk analysis in OCI Log Analytics through OCI Management Agent.",
+      "verification_note": "Discovered in the public A-Team Architecture category; not present in the earlier author-profile inventory."
+    },
+    {
+      "title": "Securing Oracle Fusion Cloud Supplier Portal with IAM Domains and MFA",
+      "url": "https://www.ateam-oracle.com/securing-oracle-fusion-cloud-supplier-portal-with-iam-domains-and-mfa",
+      "date": "2026-06-24",
+      "authors": [
+        "Roland Koenn",
+        "Ranveer Tiwari",
+        "SaaS Cloud Security"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Security & IAM",
+      "summary": "Explains supplier sign-in and MFA configuration through Fusion User Categories, alongside employee federation, rollout checks, and troubleshooting guidance.",
+      "verification_note": ""
+    },
+    {
+      "title": "Part 1 – Streaming Oracle Fusion Cloud Audit Events to OCI Streaming using Oracle Integration",
+      "url": "https://www.ateam-oracle.com/part-1-streaming-oracle-fusion-cloud-audit-events-to-oci-streaming-using-oracle-integration",
+      "date": "2026-06-02",
+      "authors": [
+        "Rekha Mathew",
+        "Ranveer Tiwari",
+        "Roland Koenn"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Audit & Observability",
+      "summary": "Demonstrates scheduled extraction of Fusion audit records through Oracle Integration and publication to OCI Streaming for independent downstream consumers.",
+      "verification_note": ""
+    },
+    {
+      "title": "Part 2 – Integrating OCI Streaming with SIEM Platforms (Splunk) using OCI Functions and Kafka Connect",
+      "url": "https://www.ateam-oracle.com/part-2-integrating-oci-streaming-with-siem-platforms-splunk-using-oci-functions-and-kafka-connect",
+      "date": "2026-06-02",
+      "authors": [
+        "Ranveer Tiwari",
+        "Roland Koenn"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Audit & Observability",
+      "summary": "Compares two architectures for sending Fusion audit events from OCI Streaming to Splunk, using OCI Functions or Kafka Connect.",
+      "verification_note": ""
+    },
+    {
+      "title": "Invoking Oracle Integration Cloud (OIC) APIs Using OAuth 2.0 (Client Credentials and Authorization Code) Across IAM Domains",
+      "url": "https://www.ateam-oracle.com/invoking-oracle-integration-cloud-oic-apis-using-oauth-2-0-client-credentials-and-authorization-code-across-iam-domains",
+      "date": "2026-04-09",
+      "authors": [
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Integration & Extensibility",
+      "summary": "Explains OAuth grant selection and IAM configuration for calling OIC APIs, including resource scopes, service roles, and downstream identity boundaries.",
+      "verification_note": ""
+    },
+    {
+      "title": "Simplifying OAuth for OIC to Fusion Integrations: Authorization Code Across IAM Domains",
+      "url": "https://www.ateam-oracle.com/simplifying-oauth-for-oic-to-fusion-integrations-authorization-code-across-iam-domains",
+      "date": "2026-04-07",
+      "authors": [
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Integration & Extensibility",
+      "summary": "Describes authorization-code integration patterns between OIC and Fusion, with guidance on identity domains, token trust, resource configuration, and authorization troubleshooting.",
+      "verification_note": ""
+    },
+    {
+      "title": "Who did what and with which access? Demystifying Oracle Fusion Security Audits",
+      "url": "https://www.ateam-oracle.com/who-did-what-and-with-which-access-demystifying-oracle-fusion-security-audits",
+      "date": "2026-02-15",
+      "authors": [
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Audit & Observability",
+      "summary": "Clarifies how Fusion access assignments, security changes, and transaction audits relate, and explains the limits of attributing actions to roles.",
+      "verification_note": ""
+    },
+    {
+      "title": "Conversational Security in Oracle Fusion: An AI Agent for Least-Privilege Discovery",
+      "url": "https://www.ateam-oracle.com/conversational-security-in-oracle-fusion-an-ai-agent-for-least-privilege-discovery",
+      "date": "2026-02-08",
+      "authors": [
+        "Ranveer Tiwari",
+        "Roland Koenn"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Applied AI",
+      "summary": "Presents a reference implementation that translates natural-language security questions into read-only Fusion privilege and role analysis through controlled integrations.",
+      "verification_note": "The current article displays February 8, 2026; the saved author-feed inventory listed February 9, 2026 at 1:34 AM."
+    },
+    {
+      "title": "Beyond Monitoring : AI-Driven Fusion ESS Job Health & Risk Observatory – Operational Intelligence for ESS Jobs with OCI Log Analytics",
+      "url": "https://www.ateam-oracle.com/beyond-monitoring-ai-driven-fusion-ess-job-health-risk-observatory-operational-intelligence-for-ess-jobs-with-oci-log-analytics",
+      "date": "2026-01-22",
+      "authors": [
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Audit & Observability",
+      "summary": "Details a reference observatory for Fusion ESS jobs, combining runtime metrics, historical trends, dashboards, detection rules, and OCI Log Analytics.",
+      "verification_note": ""
+    },
+    {
+      "title": "Understand the permissions required for Fusion Applications Audit and Security Logs Ingestion in OCI Log Analytics – Part 1",
+      "url": "https://www.ateam-oracle.com/configure-fusion-applications-audit-and-security-logs-ingestion-in-oci-log-analytics-part-1",
+      "date": "2025-12-17",
+      "authors": [
+        "Royce Fu",
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Audit & Observability",
+      "summary": "Reviews service-account privileges and access requirements for collecting Fusion audit records into OCI Log Analytics through REST-based ingestion.",
+      "verification_note": ""
+    },
+    {
+      "title": "AI-Driven IAM Audit Analysis for Oracle SaaS: From Raw Logs to Actionable Security Insights with OCI Log Analytics",
+      "url": "https://www.ateam-oracle.com/aidriven-iam-audit-analysis-for-oracle-saas-from-raw-logs-to-actionable-security-insights-with-oci-log-analytics",
+      "date": "2025-11-14",
+      "authors": [
+        "Roland Koenn",
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Audit & Observability",
+      "summary": "Shows how to analyze SaaS identity events with OCI Log Analytics, using example queries, detection rules, dashboards, and LoganAI assistance.",
+      "verification_note": ""
+    },
+    {
+      "title": "Enabling OAuth 2.0 JWT Authentication for Oracle SOAP Services in OIC Gen3",
+      "url": "https://www.ateam-oracle.com/enabling-oauth-20-jwt-authentication-for-oracle-soap-services-in-oic-gen3",
+      "date": "2025-09-12",
+      "authors": [
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Integration & Extensibility",
+      "summary": "Discusses OAuth authentication options for SOAP integrations in OIC Gen3, including authorization-code configuration, client credentials, and adapter identity-propagation limitations.",
+      "verification_note": ""
+    },
+    {
+      "title": "Methods and ways to extract OCI Events using OCI Audit and Integrate into external systems",
+      "url": "https://www.ateam-oracle.com/methods-and-ways-to-extract-oci-events-using-oci-audit-and-integrate-into-external-systems",
+      "date": "2025-08-01",
+      "authors": [
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Audit & Observability",
+      "summary": "Compares OCI Audit extraction approaches using APIs, SDKs, service connectors, and logging interfaces for external analysis, monitoring, and archival workflows.",
+      "verification_note": ""
+    },
+    {
+      "title": "Methods and ways to extract Session Information using OCI Audit and Integrate into external systems",
+      "url": "https://www.ateam-oracle.com/methods-and-ways-to-extract-session-information-using-oci-audit-and-integrate-into-external-systems",
+      "date": "2025-08-01",
+      "authors": [
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Audit & Observability",
+      "summary": "Explains extraction of Fusion sign-on and session events through OCI Audit, including APIs, SDKs, service connectors, and external monitoring integrations.",
+      "verification_note": ""
+    },
+    {
+      "title": "Restrict public access of Fusion Cloud Applications and enable access to OCI Resources using IPSEC VPN",
+      "url": "https://www.ateam-oracle.com/part-1-restrict-public-access-of-fusion-cloud-applications-and-enable-access-to-oci-resources-using-vcn-customer-onprem-network",
+      "date": "2025-05-30",
+      "authors": [
+        "Achinthya Gopinath",
+        "Shailesh Patil",
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Network Architecture",
+      "summary": "Walks through Fusion network access restrictions and connectivity from on-premises networks through site-to-site VPN, a VCN, and an OCI service gateway.",
+      "verification_note": "Title, date, and ordered byline verified from indexed primary article text; direct page fetch timed out."
+    },
+    {
+      "title": "Managing Pending Worker Accounts in Oracle Fusion IAM",
+      "url": "https://blogs.oracle.com/cloud-infrastructure/managing-pending-worker-accounts-oracle-fusion",
+      "date": "2025-02-24",
+      "authors": [
+        "Miranda Jimenez",
+        "Ranveer Tiwari",
+        "Roland Koenn"
+      ],
+      "publisher": "Oracle Cloud Infrastructure Blog",
+      "topic": "Security & IAM",
+      "summary": "Describes pending worker access through Fusion IAM, covering user categories, native MFA, employee federation, role provisioning, and identity lifecycle transitions.",
+      "verification_note": "Publication date remains February 24, 2025; article body is marked Updated August 2026."
+    },
+    {
+      "title": "How to Access Fusion Applications by Visual Builder in Different Identity Domain Using OAuth",
+      "url": "https://www.ateam-oracle.com/how-to-access-fusion-applications-by-visual-builder-in-different-identity-domain-using-oauth",
+      "date": "2025-01-31",
+      "authors": [
+        "Ranveer Tiwari",
+        "Maximilian Froeschl"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Security & IAM",
+      "summary": "Details OAuth configuration for Visual Builder connections across identity domains, covering trust setup, client credentials, user assertion, and optional identity synchronization.",
+      "verification_note": ""
+    },
+    {
+      "title": "Methods to extract audit & monitoring data from Fusion cloud applications for SIEM Integrations",
+      "url": "https://www.ateam-oracle.com/methods-to-extract-audit-monitoring-data-from-fusion-applications",
+      "date": "2024-08-02",
+      "authors": [
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Audit & Observability",
+      "summary": "Maps Fusion audit and monitoring sources to extraction methods, with retention considerations and references for planning integrations with external SIEM systems.",
+      "verification_note": ""
+    },
+    {
+      "title": "Part 3 – Extending Fusion Applications using VBCS: MFA Configurations",
+      "url": "https://www.ateam-oracle.com/part-3-applying-mfa-using-fa-iam",
+      "date": "2024-07-22",
+      "authors": [
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Security & IAM",
+      "summary": "Demonstrates MFA policies for Visual Builder extensions in the Fusion identity domain, covering Fusion application users and local IAM user scenarios.",
+      "verification_note": ""
+    },
+    {
+      "title": "Part 2 – Extending Fusion Applications using VBCS: SSO Configurations",
+      "url": "https://www.ateam-oracle.com/accessing-vbcs-application-provisioned-in-fusion-iam-identity-domain",
+      "date": "2024-05-24",
+      "authors": [
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Security & IAM",
+      "summary": "Explains single sign-on configurations for Visual Builder applications, distinguishing access by Fusion users, local IAM accounts, and externally federated identities.",
+      "verification_note": "Article displays May 24, 2024; inventory feed timestamp is May 25, 2024. Used displayed article publication date."
+    },
+    {
+      "title": "Creating Innovative User Experience for Fusion Cloud Applications Scheduled Processes",
+      "url": "https://www.ateam-oracle.com/creating-innovate-ux-for-fusion-cloud-applications-scheduled-processes",
+      "date": "2024-05-22",
+      "authors": [
+        "Ranveer Tiwari",
+        "Bala Mahalingam"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Integration & Extensibility",
+      "summary": "Presents Visual Builder Studio extension ideas using Scheduler REST APIs, including summarized job views, calendar interfaces, and ESS orchestration options.",
+      "verification_note": ""
+    },
+    {
+      "title": "Part 1 – Extending Fusion Applications using VBCS: OAuth Configurations",
+      "url": "https://www.ateam-oracle.com/using-vbcs-service-connections-provisioned-in-fusion-iam-identity-domain",
+      "date": "2024-05-21",
+      "authors": [
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Security & IAM",
+      "summary": "Explains OAuth service connection configurations for Visual Builder extensions within the Fusion identity domain, relating authentication choices to application access requirements.",
+      "verification_note": ""
+    },
+    {
+      "title": "Implement JWT Token Authentication with Fusion Cloud Application (REST/SOAP) & extend in Node.js based applications",
+      "url": "https://www.ateam-oracle.com/implement-jwt-token-authentication-with-fusion-cloud-application-restsoap-extend-in-nodejs-based-applications",
+      "date": "2023-12-06",
+      "authors": [
+        "Ranveer Tiwari",
+        "Dipak Chhablani"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Security & IAM",
+      "summary": "Demonstrates certificate-based JWT authentication for Fusion REST and SOAP integrations, with trust configuration, token generation, and examples for Node.js applications.",
+      "verification_note": ""
+    },
+    {
+      "title": "Oracle Cloud HCM Integration Using Oracle PaaS – Patterns & Use Cases",
+      "url": "https://www.ateam-oracle.com/oracle-cloud-hcm-integration-using-oracle-paas-patterns-use-cases",
+      "date": "2023-06-18",
+      "authors": [
+        "Ranveer Tiwari"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Integration & Extensibility",
+      "summary": "Organizes twelve inbound and outbound HCM integration patterns using Oracle Integration and Autonomous Transaction Processing, spanning files, APIs, and transformation requirements.",
+      "verification_note": "Article displays June 18, 2023; inventory feed timestamp is June 19, 2023. Used displayed article publication date."
+    },
+    {
+      "title": "Network connectivity patterns for Oracle Cloud HCM and ERP applications on OCI.",
+      "url": "https://www.ateam-oracle.com/network-connectivity-patterns-for-oracle-cloud-hcm-and-erp-applications-on-oci",
+      "date": "2023-03-01",
+      "authors": [
+        "Mani Krishnan",
+        "Joshua Thomas",
+        "Ranveer Tiwari",
+        "Emma Thomas"
+      ],
+      "publisher": "Oracle A-Team",
+      "topic": "Network Architecture",
+      "summary": "Surveys connectivity architectures for Fusion applications, comparing public internet, VPN, and FastConnect approaches alongside CDN behavior and network access considerations.",
+      "verification_note": "Publication date remains March 1, 2023; article body is marked Last updated June 15, 2026."
+    }
+  ]
+}
