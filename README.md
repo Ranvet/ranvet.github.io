@@ -1,12 +1,14 @@
 # Ranveer Tiwari — personal website
 
-Live address: https://ranvet.github.io/
+Primary address: https://ranveertiwari.com/
 
-Research: https://ranvet.github.io/research/
+Research: https://ranveertiwari.com/research/
 
-Publications: https://ranvet.github.io/publications/
+Publications: https://ranveertiwari.com/publications/
 
-Writing: https://ranvet.github.io/writing/
+Writing: https://ranveertiwari.com/writing/
+
+Hosting repository: https://github.com/Ranvet/ranvet.github.io. The custom address requires the DNS and HTTPS checks described below; the domain registration alone does not connect the website.
 
 A small, portable personal site: static HTML and CSS, no third-party runtime dependencies, no trackers, no paid theme, and no external font requests. The homepage introduces Ranveer through his technical interests and four thematic featured groups, with employer affiliation providing context rather than defining the site's identity. Research, Publications, and Writing have separate navigation destinations. The Writing page contains 28 verified technical articles with original summaries and full author credits, grouped by year, with optional local search and topic/year filters. All entries remain readable without JavaScript.
 
@@ -25,16 +27,17 @@ A small, portable personal site: static HTML and CSS, no third-party runtime dep
 - `404.html`: missing-page fallback.
 - `robots.txt` and `sitemap.xml`: crawler discovery.
 - `.nojekyll`: tells GitHub Pages to serve these files directly.
+- `CNAME`: the primary custom domain, `ranveertiwari.com`.
 
 ## Publish
 
-1. Create a **public** repository owned by **Ranvet**, named **ranvet.github.io**. If publishing this existing local repository, do not initialize the remote with a README or license.
-2. Push these files to its `main` branch.
-3. In **Settings → Pages**, select **Deploy from a branch**, **main**, **/(root)**, then save.
-4. Wait for the Pages deployment to complete and open https://ranvet.github.io/.
-5. Confirm HTTPS and test Research, Publications, Writing, profile links, and the About/Connect homepage anchors.
+1. Reuse the existing **Ranvet/ranvet.github.io** repository and authenticated GitHub connection. Do not recreate the repository or repeat onboarding.
+2. Validate changes, commit only the intended files, and push to `main`.
+3. Keep **Settings → Pages** configured for **Deploy from a branch**, **main**, **/(root)**, with custom domain `ranveertiwari.com`.
+4. Wait for the Pages deployment matching the pushed commit to complete.
+5. After DNS and HTTPS are ready, open https://ranveertiwari.com/ and test Research, Publications, Writing, profile links, and the About/Connect homepage anchors.
 
-This uses GitHub Pages for a public repository; no domain purchase is needed. GitHub documents eligibility and setup at https://docs.github.com/en/pages/quickstart.
+This uses GitHub Pages for a public repository. The separately registered domain does not require purchasing hosting or a website builder. GitHub documents eligibility and setup at https://docs.github.com/en/pages/quickstart.
 
 ## Preview locally
 
@@ -71,8 +74,22 @@ The public Google Scholar and ORCID profiles were checked on 2026-09-13 and each
 - Do not commit credentials, customer data, unpublished patent material, or internal work documents.
 - No open-source license is selected on the owner’s behalf.
 
-## Add a personal domain later
+## Personal domain and DNS
 
-Register the domain in an account you control, configure it in **Settings → Pages**, and follow GitHub’s current DNS and domain-verification instructions. Then update the canonical URL, Open Graph URL, Person schema URL, `robots.txt`, and `sitemap.xml`. No custom domain or `CNAME` file is configured in this version.
+The primary domain is `ranveertiwari.com`, registered at Spaceship in the owner's account. Keep the existing Spaceship nameservers. GitHub account-level ownership verification was confirmed on 2026-09-13; retain its `_github-pages-challenge-Ranvet` TXT record in DNS. Its value is deliberately not stored in this repository.
+
+Configure the repository custom domain before pointing DNS to GitHub Pages. The required web-routing records are:
+
+| Host | Type | Value |
+| --- | --- | --- |
+| `@` | A | `185.199.108.153` |
+| `@` | A | `185.199.109.153` |
+| `@` | A | `185.199.110.153` |
+| `@` | A | `185.199.111.153` |
+| `www` | CNAME | `ranvet.github.io` |
+
+Use the registrar's default TTL. Do not add wildcard records. Inspect conflicting apex or `www` routing records before changing them, and preserve unrelated TXT/MX records. Domain verification is not proof that these routing records are saved or that HTTPS is ready. Verify public DNS, the Pages certificate, and **Enforce HTTPS** before reporting the custom address as live. Once both names are configured, GitHub Pages redirects `www` to the primary apex domain; also verify the existing `ranvet.github.io` address redirects correctly.
+
+The `CNAME` file, page canonical/Open Graph URLs, Person schema URL, `robots.txt`, and `sitemap.xml` use the custom domain. If changing hosts or domains later, update these together. Follow current GitHub guidance at https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site.
 
 Keep a local copy of this repository. The content and layout can be moved to another static host; the free `github.io` address itself is provided by GitHub and is not an independently registered domain.
