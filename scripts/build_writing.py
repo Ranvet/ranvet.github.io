@@ -24,7 +24,7 @@ def entry(article):
     title, url, published, publisher, topic, summary = (
         escape(article[key]) for key in ("title", "url", "date", "publisher", "topic", "summary")
     )
-    authors = " · ".join(escape(author) for author in article["authors"])
+    authors = ", ".join(escape(author) for author in article["authors"])
     return f"""
         <article class="archive-entry" data-year="{published[:4]}" data-topic="{topic}">
           <time datetime="{published}">{date_label(published)}</time>
